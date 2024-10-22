@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NewComponentComponent } from './components/new-component/new-component.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, NewComponentComponent, CommonModule],
+  template: `
+    <!-- <router-outlet /> -->
+    <h1>Curso de angular</h1>
+    <app-new-component/>
+  `,
 })
-export class AppComponent {
-  title = 'projeto-angular';
-}
+export class AppComponent {}
+
+// <router-outlet />
