@@ -1,0 +1,25 @@
+<h2>Template</h2>
+<h3>Text Interpolation</h3>
+<!-- {{name}} - {{age}} teste - {{sum(10, 20)}} -->
+ <!-- {{age > 1 ? "é maior" : "é menor"}} -->
+<!-- {{condition}} -->
+
+<hr/>
+
+<h2>property binding</h2>
+
+<button [disabled]="isDisabed">butão</button>
+
+<!-- <img [src]="" alt=""> -->
+
+<hr/>
+
+<h2>Attribute binding</h2>
+<p [attr.aria-label]="name"></p>
+
+<hr/>
+
+<h2>Class and Style binding</h2>
+<p [class.background-red]="age >= 20">{{name}}</p>
+
+<p [style.text-decoration]="isTextDecoration"></p>

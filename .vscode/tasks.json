@@ -37,6 +37,21 @@
           }
         }
       }
+    },
+    {
+      "type": "npm",
+      "script": "ng",
+      "problemMatcher": [],
+      "label": "npm: ng",
+      "detail": "ng"
+    },
+    {
+      "type": "npm",
+      "script": "install",
+      "group": "clean",
+      "problemMatcher": [],
+      "label": "npm: install",
+      "detail": "install dependencies from package"
     }
   ]
 }
